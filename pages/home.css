@@ -265,3 +265,63 @@ footer .f-links a{
 footer .f-links:hover {
   text-decoration: underline;
 }
+
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner .hero {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .banner .hero-image {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+    .banner .hero-image img {
+    width: 100%;
+    }
+
+  .boxes {
+    margin: 0;
+    padding: 0;
+  }
+
+  .boxes .a1, .a2, .a3, .a4 {
+    max-width: 90vw;
+    height: auto;
+    padding: 10px;
+  }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/* PC */
+@media only screen and (min-width: 768px) {
+
+
+}
