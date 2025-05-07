@@ -7,17 +7,24 @@
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #f0f0f0;
+  /* overflow-x: hidden; */
 }
 
-/* ----------NAV---------- */
+/* ----------NAVIGATION---------- */
 
+header {
+  position: realative;
+
+}
 nav {
   display: flex;
   justify-content: space-between;
   background-color: #f0f0f0;
   width: 100%;
   height: 60px;
-  border-bottom: #333 1px solid;
+  border-bottom: #2a2a2a 1px solid;
+  position: sticky;
+  top: 0;
 }
 
 nav div.logo {
@@ -63,9 +70,10 @@ nav ul li a:hover, div.logo:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 70vh;
   background-color: antiquewhite;
+  border-bottom: #000000 2px solid;
 }
 
 .banner .hero{
@@ -73,33 +81,35 @@ nav ul li a:hover, div.logo:hover {
   flex-direction: column;
   justify-content: flex-start;
   width: 50%;
-  padding: 0 150px;
+  padding: 50px 100px 0 250px;
 }
 
 .banner .hero h1 {
   font-size: 3rem;
+  font-weight: bolder;
   text-rendering: optimizeLegibility;
 }
 
 .banner .hero p{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-rendering: optimizeLegibility;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .banner .hero-image {
-  width: 50%;
-  height: auto;
+  width: 600px;
+  height: 500px;
   display: flex;
+  justify-content: center;
 }
 
 .banner div.hero div.buttons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   width: 50%;
-  margin: 0 33px;
 }
+
 .banner div.hero div.buttons a {
   text-decoration: none;
   color: #fff;
@@ -110,16 +120,19 @@ nav ul li a:hover, div.logo:hover {
 .banner div.hero div.buttons .btn {
   align-content: center;
   width:150px;
-  height: 30px;
+  height: 50px;
   margin: 20px 20px;
+  font-size: large;
+  font-weight: bold;
   background-color:antiquewhite;
+  outline: none;
+  border: 2px solid #000;
 }
 
 #btn_white {
   background-color: #fff;
   color: #333;
 }
-
 
 .banner .hero div.buttons .btn:hover, #btn_white:hover {
   background-color: #000000;
@@ -131,8 +144,10 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
 }
+
 .head {
     font-size: 2rem;
     line-height: 2;
@@ -146,10 +161,12 @@ main {
   font-weight: bold;
   line-height: 1.4;
 }
-.sup p  {
-  font-size: 1.2rem;
+
+.sub p  {
   text-align: center;
   line-height: 1.6;
+  font-size: 20px;
+  margin-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -159,8 +176,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 200px 0 200px;
   padding: 30px 20px;
 }
 
@@ -168,19 +184,29 @@ main {
   display: flex;
   align-items: center;
   gap: 20px;
-  border: 1px solid #000;
-  width: 400px;
-  height: 100px;
+  border: 2px solid #000;
+  max-width: 410px;
+  height: 125px;
+
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
 }
+
 article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 1.5;
   align-items: center;
 }
+
+.boxes img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
 
 section.ready {
   display: flex;
@@ -238,5 +264,4 @@ footer .f-links a{
 }
 footer .f-links:hover {
   text-decoration: underline;
-
 }
